@@ -117,8 +117,10 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 #aliases
+## progrms
 alias ze="zellij"
 alias lg="lazygit"
+## commands fzf
 alias fd='cd $(find $HOME  -type d -print | fzf)'
 alias ff='find $HOME  -type f -print | fzf'
 alias nfd='nvim $(find $HOME -type d | fzf)'
@@ -126,5 +128,6 @@ alias nff='nvim $(find $HOME -type f | fzf)'
 alias cfd='code $(find $HOME -type d | fzf)'
 alias cff='code $(find $HOME -type f | fzf)'
 alias hf='history | fzf'
-
+## commands git
+alias gk='cat ~/gitKey.md'
 
