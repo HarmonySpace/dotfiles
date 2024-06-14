@@ -125,9 +125,11 @@ alias fd='cd $(find $HOME  -type d -print | fzf)'
 alias ff='find $HOME  -type f -print | fzf'
 alias nfd='nvim $(find $HOME -type d | fzf)'
 alias nff='nvim $(find $HOME -type f | fzf)'
+alias hfd='hx $(find $HOME -type d | fzf)'
+alias hff='hx $(find $HOME -type f | fzf)'
 alias cfd='code $(find $HOME -type d | fzf)'
 alias cff='code $(find $HOME -type f | fzf)'
-alias hf='history | fzf'
+alias fh='history | fzf'
 ## commands git
 alias gk='cat ~/gitKey.md'
 
