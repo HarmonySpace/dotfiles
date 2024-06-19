@@ -24,6 +24,10 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+git-exclude = false
+git-ignore = false
+git-global = false
+ignore = false
 
 [editor.whitespace]
 render = "all"
