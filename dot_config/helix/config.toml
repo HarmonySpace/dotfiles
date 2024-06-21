@@ -1,4 +1,4 @@
-theme = "poimandres"
+theme = "base16_transparent"
 
 [editor]
 line-number = "relative"
@@ -23,18 +23,14 @@ normal = "block"
 select = "underline"
 
 [editor.file-picker]
-hidden = false
-git-exclude = false
-git-ignore = false
-git-global = false
-ignore = false
+hidden = true
 
 [editor.whitespace]
 render = "all"
 
 [editor.indent-guides]
 render = true
-character = "┆" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
 
 [editor.soft-wrap]
