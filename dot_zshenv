@@ -1,0 +1,8 @@
+# ohMyZsh
+export ZSH="$HOME/.oh-my-zsh"
+# paths
+export PATH=$HOME/bin:~/.local/bin:$PATH
+# editor
+export EDITOR="hx"
+# theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
