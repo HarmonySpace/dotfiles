@@ -127,7 +127,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # functions
 ## pretty cat
 _pretty_cat() {
-  bat --color always --theme ansi --style full ${1}
+  if [ "${2}" = "b" ]; then
+    bat --color always --theme ansi --style full ${1}
+  else
+    cat ${1}
+  fi
 }
 ## pretty cd
 _pretty_cd() {
@@ -178,6 +182,7 @@ _fzf_history(){
     history | cut -d" " -f4- | sort -u | _fzf_pick "COMMAND ->"
   )
   echo $selection && echo $selection | xclip -selection clipboard
+  clear
 }
 
 
@@ -200,6 +205,7 @@ alias pcat="_pretty_cat"
 alias fh='_fzf_history'
 
 ## commands git
+alias pgk='_pretty_cat ~/gitKey.md b'
 alias gk='_pretty_cat ~/gitKey.md'
 
 
