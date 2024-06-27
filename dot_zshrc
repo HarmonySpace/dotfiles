@@ -196,8 +196,8 @@ alias f=' find -type d | _fzf_file_picker'
 alias fn='_fzf_nav'
 
 ## nav
-alias lf='exa -l -hBgUum --icons -a'
-alias le='exa -l -h --icons -a'
+alias lf='exa -l -hBgUum --icons -a -a'
+alias le='exa -l -h --icons -a -a'
 alias pcd='_pretty_cd' 
 alias pcat="_pretty_cat"
 
