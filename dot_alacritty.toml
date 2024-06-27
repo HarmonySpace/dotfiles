@@ -1,12 +1,12 @@
 import = [
-  "~/alacritty-themes/cyber_china.toml"
+  "~/alacritty-themes/leaves.toml"
 ]
 
 [window]
 dimensions = { columns = 120, lines = 20 }
 decorations = "Full"
-#opacity = 0.95
-opacity = 1
+padding = { x = 40, y = 30 }
+opacity = 0.95
 blur = true
 
 [font]
@@ -18,10 +18,7 @@ blink_interval = 100
 
 [keyboard]
 #bindings = [{ <key>, <mods>, <mode>, <action> | <chars> },]
-#bindings = [{ key = "n", mods = "Control | Shift", action = "CreateNewWindow" },]
+bindings = [{ key = "n", mods = "Control | Shift", action = "CreateNewWindow" },]
 
 [selection]
 save_to_clipboard = true
-
-
-
