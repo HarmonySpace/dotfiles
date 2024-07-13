@@ -185,7 +185,6 @@ _fzf_history(){
   clear
 }
 
-
 # aliases
 ## progrms
 alias ze="zellij"
@@ -207,7 +206,6 @@ alias fh='_fzf_history'
 ## commands git
 alias pgk='_pretty_cat ~/gitKey.md b'
 alias gk='_pretty_cat ~/gitKey.md'
-
 
 # themes
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
