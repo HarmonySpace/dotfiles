@@ -1,0 +1,27 @@
+[colors]
+cursor = { text = "#EBF4F6", cursor = "#4C3BCF"}
+selection = { text = "#12212F", cursor = "#4C3BCF"}
+[colors.primary]
+foreground = "#EBF4F6"
+background = "#12212F"
+[colors.search]
+matches = { foreground = "#12212F", background = "#4C3BCF"}
+focused_match = { foreground = "#12212F", background = "#4B70F5"}
+[colors.normal]
+black = "#22313f"
+red = "#B1AFFF"
+green = "#4B70F5"
+yellow = "#3DC2EC"
+blue = "#4C3BCF"
+magenta = "#e1dfff"
+cyan = "#7c6bff"
+white = "#cbd4d6"
+[colors.bright]
+black = "#32414f"
+red = "#d1cfff"
+green = "#6b90ff"
+yellow = "#5de2ff"
+blue = "#6c5bef"
+magenta = "#f1efff"
+cyan = "#8c7bff"
+white = "#ffffff"

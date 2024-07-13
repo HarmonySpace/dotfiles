@@ -1,12 +1,12 @@
 import = [
-  "~/alacritty-themes/leaves.toml"
+  "~/alacritty-themes/moon.toml"
 ]
 
 [window]
 dimensions = { columns = 120, lines = 20 }
 decorations = "Full"
 padding = { x = 40, y = 30 }
-opacity = 0.95
+opacity = 1
 blur = true
 
 [font]
