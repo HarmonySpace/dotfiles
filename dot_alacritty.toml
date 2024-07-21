@@ -1,5 +1,5 @@
 import = [
-  "~/alacritty-themes/moon.toml"
+  "~/alacritty-themes/sky.toml"
 ]
 
 [window]

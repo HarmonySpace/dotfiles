@@ -3,8 +3,8 @@ theme = "base16_transparent"
 [editor]
 line-number = "relative"
 mouse = true
-cursorline = true
-cursorcolumn = true
+cursorline = false
+cursorcolumn = false
 auto-completion = true
 bufferline = "always"
 
