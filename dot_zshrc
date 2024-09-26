@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/box/.zsh/completions:"* ]]; then export FPATH="/home/box/.zsh/completions:$FPATH"; fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -115,9 +117,8 @@ source $ZSH/oh-my-zsh.sh
 # global vars
 export EDITOR=nvim
 
-
-#functions
-# yazi
+# functions
+#- yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -126,10 +127,19 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
-
-# fzf
-function f(){
+#- exa
+function le() {
+  exa --oneline --long --git --all --icons .
 }
 
+# theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# javascript enviroments
+#- nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#- deno
+. "/home/box/.deno/env"
