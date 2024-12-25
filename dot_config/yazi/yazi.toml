@@ -1,4 +1,19 @@
 [manager]
-show_hidden = true
 sort_dir_first = true
+[opener]
+edit = [
+  #{ run = 'nvim "$@"', desc="open in nvim", block = true, for = "unix" },
+	# { run = 'codium "$@"', desc = "open in codium",  block = true, for = "unix" },
+	{ run = 'zed "$@"', desc = "Open in Zed",  block = true, for = "unix" },
+]
+open = [
+  #{ run = 'nvim "./$@"', desc = "open nvim", block = true, for = "unix" },
+	{ run = 'zed "./$@"', desc = "open Zed", block = true, for = "unix" },
+]
+
+[plugin]
+prepend_previewers = [
+  { name = "*.md", run = "glow" },
+]
+
 
